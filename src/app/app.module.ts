@@ -3,6 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -11,6 +12,7 @@ import { AppComponent }         from './app.component';
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -19,10 +21,11 @@ import { isPlatformBrowser } from '@angular/common';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-   
+    FlexLayoutModule
   ],
   declarations: [
     AppComponent,
+    HeaderComponent,
 
   ],
   providers: [ ],
