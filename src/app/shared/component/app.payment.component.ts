@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import {ReportService} from '../service/report.service';
 import {Props} from "../../apex/common/props";
 import { DomSanitizer} from '@angular/platform-browser';
 
