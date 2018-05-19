@@ -3,8 +3,6 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent }         from './app.component';
@@ -59,13 +57,13 @@ import { GamingarvrprogramComponent } from './components/programs/gamingarvrprog
 import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram.component';
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
+import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'tour-of-heroes' }),
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    FlexLayoutModule,
     SharedModule.forRoot()
   ],
   declarations: [
@@ -115,6 +113,7 @@ import { MaincourseComponent } from './components/courses/maincourse/maincourse.
     CrtprogramComponent,
     GethackathonprogramComponent,
     MaincourseComponent,
+    MainprogramComponent,
 
   ],
   providers: [FooterService,WINDOW_PROVIDERS],

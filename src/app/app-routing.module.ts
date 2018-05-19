@@ -38,12 +38,16 @@ import { GamingarvrprogramComponent } from './components/programs/gamingarvrprog
 import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram.component';
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
-const routes: Routes = [
+import {MainprogramComponent} from './components/programs/mainprogram/mainprogram.component';
+export const routes: Routes = [
   { path: '', component: LandingComponent },
   {path:'courses',component:MaincourseComponent,children:[
     {path:'**',component:MaincourseComponent}
   ]},
-  { path: 'course/devops-course-training-hyderabad', component: DevopscourseComponent },
+  {path:'programs',component:MainprogramComponent,children:[
+    {path:'**',component:MainprogramComponent}
+  ]},
+  { path: 'course/devops-course-training-hyderabad', component: DevopscourseComponent},
   { path: 'course/azure-course-training-hyderabad', component: AzurecourseComponent },
   { path: 'course/python-course-training-hyderabad', component: PythoncourseComponent },
   { path: 'course/deep-learning-course-training-hyderabad', component: DeeplearningcourseComponent },

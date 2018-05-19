@@ -221,7 +221,9 @@ export class MaincourseComponent implements OnInit {
        'mobile': ['', Validators.compose([Validators.required, Validators.minLength(5), Validators.pattern(this.mobilePattern)])]
     });
   }
-
+  onSubmit(){
+    
+  }
   ngOnInit() {
   }
   ngAfterViewInit() {
