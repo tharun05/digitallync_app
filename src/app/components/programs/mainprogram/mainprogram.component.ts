@@ -71,7 +71,7 @@ programData=[
     views:"455",
     programImage:"ai-foundation.png",
     programImageAlt:"AI foundation with Python",
-    slug:"AI-Python",
+    slug:"AI-python",
     piosition:"3"
   },
   {
