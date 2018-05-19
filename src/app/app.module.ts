@@ -60,7 +60,7 @@ import { MaincourseComponent } from './components/courses/maincourse/maincourse.
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
 @NgModule({
   imports: [
-    BrowserModule.withServerTransition({ appId: 'tour-of-heroes' }),
+    BrowserModule.withServerTransition({ appId: 'digital-lync' }),
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
