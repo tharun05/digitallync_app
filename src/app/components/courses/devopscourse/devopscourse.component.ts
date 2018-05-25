@@ -53,7 +53,15 @@ courseData={
     pre : [
         "Linux Essentials", 
         "Understanding of SDLC and Agile"
-    ]
+    ],
+   projects:[
+     {
+      name: "Use Maven to develop web applications and put the application under version control system using Git.",
+      description: "Use GitHub and push the project to GitHub,for collaboration. Build a GCP instance and install jenkins CI-CD server and configure the jenkins using RBAC, configure security, manage required plugins. Configure jenkins and setup GitHub webhook for auto deploying the WebApp.",
+      image: "project-digital-lync.png",
+      imageAlt: ""    
+    }
+  ]
   }
 subModules=[
   { 

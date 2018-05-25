@@ -58,6 +58,7 @@ import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-lync' }),
@@ -114,6 +115,7 @@ import { MainprogramComponent } from './components/programs/mainprogram/mainprog
     GethackathonprogramComponent,
     MaincourseComponent,
     MainprogramComponent,
+    ReviewsComponent,
 
   ],
   providers: [FooterService,WINDOW_PROVIDERS],
