@@ -38,14 +38,27 @@ courseData={
     why : "DevOps is the combination of Cultural Philosophies, Practices and Tools that increases an Organizations ability to deliver applications and services at high velocity evolving and improving products.", 
     whyImage : "why-learn-devops-digital-lync.png", 
     whyImageAlt : "why learn DevOps", 
-    careerHead : "Being a specialist in DevOps, one needs to integrate a happy balance between the operations and the development team.", 
+    careerHead : "Being a specialist in DevOps, one needs to integrate a happy balance between the operations and the development team.",
+    careerPara :"Upon successful completion of the course, candidates can choose their career as:",
     courseImage : "devops-digital-lync.png", 
     courseImageAlt : "Devops", 
     views :5750, 
     share : 123,  
     slug : "devops-course-training-hyderabad", 
     position : 1, 
-    curriculum : "../../../assets/curriculums/Devops.pdf",  
+    curriculum : "../../../assets/curriculums/Devops.pdf",
+    devopsHeaderName: "Projects",
+    CareerHeader:"Career Prospects",
+    whyDigitalLyncHead:"Why Digital Lync",
+    whyDigitalLyncPara:"To empower technology seekers by providing world class infrastructure, best quality of technology education, invent, great products and support enthusiastic new entrepreneurs",
+    success :"Our Success",
+    successPara:"We Understand & We Guide",
+    successParaList:"Career Guidance", 
+    successParaLists:"You Choose & You Excel", 
+    coursePara:"Course Choice", 
+    courseParaList:"We Assist & You Succeed", 
+    courseParaLists:"Placement Assistance",             
+      
     careers : [
         "DevOps Engineer", 
         "Build & Release Engineer"
@@ -61,8 +74,12 @@ courseData={
       image: "project-digital-lync.png",
       imageAlt: ""    
     }
-  ]
+  ],
+
   }
+
+  heading=[{headername:"Our Review"}]
+
 subModules=[
   { 
     name : "Linux", 
