@@ -25,8 +25,6 @@ export class DevopscourseComponent implements OnInit {
   imageHost=Props.IMAGE_HOST;
   bannerData:any= [
     {
-      heading:'DevOps Too, So, Step into online platform for Bright Career!',
-      img:'../../../../assets/images/programs_banner.png'
   }
   ];
 courseData={ 
@@ -59,16 +57,57 @@ subModules=[
   { 
     name : "Linux", 
     description : "Linux is an open source operating system which is incredibly customizable.", 
-    image : "linux-digital-lync.svg", 
+    image : "../../../assets/images/linux-digital-lync.svg", 
     imageAlt : "Linux"
 },
 { 
   name : "Jenkins", 
   description : "Jenkins provides hundreds of plugins to support building, deploying and automating any project.", 
-  image : "jenkins-digital-lync.svg", 
+  image : "../../../assets/images/jenkins-digital-lync.svg", 
   imageAlt : "Jenkins"
-}
-
+},
+{
+  name:"Git",
+  description:"Fast and Flexible distributed Version Control Tool. Allows to experiment new feature without interfering with working code.",
+  image:"../../../assets/images/git-digital-lync.svg",
+  imageAlt:"Git"
+},
+{
+  name:"Lamp",
+  description:"Linux-Apache-MySQL-PHP technology is open source and highly secure, while running on a LINUX operating system.",
+  image:"../../../assets/images/lamp-digital-lync.svg",
+  imageAlt:"Lamp"
+},
+{
+  name:"Chef",
+  description:"Strong choice for experienced DevOps Teams to automate development and deployment infrastructure.",
+  image:"../../../assets/images/chef-digital-lync.svg",
+  imageAlt:"Chef"
+},
+{
+  name:"Docker",
+  description:"Docker is a computer program that performs operating-system-level virtualization also known as containerization.",
+  image:"../../../assets/images/docker-digital-lync.svg",
+  imageAlt:"Docker"
+},
+{
+  name:"Maven",
+  description:"MAVEN has the ability to create project structure. Maven can generate documentation for the project.",
+  image:"../../../assets/images/maven-digital-lync.svg",
+  imageAlt:"Maven"
+},
+{
+  name:"Vagrant",
+  description:"Allows building and managing virtual machine environments.",
+  image:"../../../assets/images/vagrant-digital-lync.svg",
+  imageAlt:"Vagrant"
+},
+{
+  name:"Nagios",
+  description:"Nagios is recognized as the top solution to monitor servers. It is fully capable of monitoring Windows servers, Linux servers.",
+  image:"../../../assets/images/nagios-digital-lync.svg",
+  imageAlt:"Nagios"
+},
 ]
 
   ngOnInit() {

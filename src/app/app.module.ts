@@ -57,7 +57,9 @@ import { GamingarvrprogramComponent } from './components/programs/gamingarvrprog
 import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram.component';
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
+import { ModalpopupComponent } from './components/courses/modalpopup/modalpopup.component';
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
+import { CoursesService } from './components/courses/courses.service';
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-lync' }),
@@ -114,9 +116,9 @@ import { MainprogramComponent } from './components/programs/mainprogram/mainprog
     GethackathonprogramComponent,
     MaincourseComponent,
     MainprogramComponent,
-
+    ModalpopupComponent
   ],
-  providers: [FooterService,WINDOW_PROVIDERS],
+  providers: [FooterService,WINDOW_PROVIDERS,CoursesService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
