@@ -59,6 +59,9 @@ import { GethackathonprogramComponent } from './components/programs/gethackathon
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
 import { ModalpopupComponent } from './components/courses/modalpopup/modalpopup.component';
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
+// import { BatchesComponent } from './components/courses/batches/batches.component';
+
+
 
 import { CoursesService } from './components/courses/courses.service';
 
@@ -122,6 +125,7 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     MainprogramComponent,
     ModalpopupComponent,
     ReviewsComponent,
+    // BatchesComponent
   ],
   providers: [FooterService,WINDOW_PROVIDERS,CoursesService],
   bootstrap: [ AppComponent ]

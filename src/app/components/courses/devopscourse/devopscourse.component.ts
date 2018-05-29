@@ -1,8 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Inject, ViewChild, ElementRef } from '@angular/core';
 import { Props } from '../../../apex/common/props';
+import { DOCUMENT } from "@angular/platform-browser";
 import {Meta, Title} from '@angular/platform-browser';
 import {routes} from "../../../app-routing.module";
 import {Router, ActivatedRoute} from "@angular/router";
+import { Page } from '../../../apex/entities/page.entity';
+import { FormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { CoursesService } from '../courses.service';
+
+// import { WINDOW } from "./window.service";
+
+
 
 @Component({
   selector: 'app-devopscourse',
@@ -10,8 +18,11 @@ import {Router, ActivatedRoute} from "@angular/router";
   styleUrls: ['./devopscourse.component.scss']
 })
 export class DevopscourseComponent implements OnInit {
+  page: Page = new Page();
+  isShowModal:boolean = true;
+  showForm:boolean = false;
 
-  constructor(private title: Title,private meta: Meta,private routes: Router,private activatedRoute:ActivatedRoute) { 
+  constructor(private title: Title,private meta: Meta,private routes: Router,private activatedRoute:ActivatedRoute,private formBuilder: FormBuilder,@Inject(DOCUMENT) private document: Document,private coursesService: CoursesService) { 
     this.meta.updateTag(
       {name: 'Description', content: 'Indias No.1 DevOps Training Institute in Hyderabad with Placement Assistance. Upgrade Your Career by taking DevOps Certification Course @ Digtial Lync!'});
       this.meta.updateTag(
@@ -20,6 +31,8 @@ export class DevopscourseComponent implements OnInit {
           {name: 'Keywords', content: 'DevOps training in hyderabad, DevOps course in hyderabad, DevOps certification in Hyderabad, DevOps training institute in Hyderabad, digital lync'});
   
     title.setTitle('DevOps Training in Hyderabad | DevOps Certification Course | Digital Lync');
+    this.isShowModal = true;
+
   }
  
   imageHost=Props.IMAGE_HOST;

@@ -30,17 +30,17 @@ export class ModalpopupComponent implements OnInit {
 
   ngOnInit() {
   }
-  // ngOnChanges(changes: { [key: string]: SimpleChange }) {
-  //   if (changes.hasOwnProperty('page')) {
-  //       this.page = JSON.parse(JSON.stringify(this.page));
-  //       console.log(this.page)
-  //   }
-  // }
+  ngOnChanges(changes: { [key: string]: SimpleChange }) {
+    if (changes.hasOwnProperty('page')) {
+        this.page = JSON.parse(JSON.stringify(this.page));
+        console.log(this.page)
+    }
+  }
   submit(){
-    // let postObj:any = {};
-    // postObj.name = this.profile.name;
-    // postObj.email = this.profile.email;
-    // postObj.mobile = this.profile.mobile;
+    let postObj:any = {};
+    postObj.name = this.profile.name;
+    postObj.email = this.profile.email;
+    postObj.mobile = this.profile.mobile;
     this.profile.sourceOfPage = this.page.slug;
     console.log(this.profile)
     this.coursesService.downloadCurriculum(this.profile).subscribe((data:any)=>{
