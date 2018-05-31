@@ -4,7 +4,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 
-// import { CommonService } from '../../service/common.service';
+
+
 import { Props } from '../../apex/common/props';
 
 
@@ -12,14 +13,17 @@ import { Props } from '../../apex/common/props';
 // import { Storage }from '../../shared/utils/storage';
 @Injectable()
 export class CoursesService {
-  private host = Props.API_END_POINT;
+
+  private host ='https://api.digital-lync.com/api/';
+
   public imageHost = Props.IMAGE_HOST;
   private url: string = '';
   baseUrl: string;
   userDetails: any;
   token: string;
-  constructor(private http: HttpClient, private router: Router, private activatedroute: ActivatedRoute)  {
-    // super();
+
+  constructor(private http: HttpClient, private router: Router, private activatedroute: ActivatedRoute) {
+  
   }
   
   getUserDetails() {
@@ -58,7 +62,10 @@ export class CoursesService {
   saveFormToHubSpot(data: any) {
     //this.appService.showLoader(true);
     this.url = this.host+"enroll/hubspot";
-    return this.http.post(this.url, {data: data});
+
+    // this.url='https://api-in21.leadsquared.com/v2/LeadManagement.svc/Lead.Capture?accessKey=u$rf99f520720223acab7229b415787ae6a&secretKey=f504b70e8c4dcba8e28d1d64eb271d311d02baf0';
+    console.log(data);
+    return this.http.post(this.url,{data: data});
   }
   downloadCurriculum(data: any) {
     //this.appService.showLoader(true);
@@ -69,7 +76,16 @@ export class CoursesService {
     this.url = this.host + "batch";
     return this.http.post(this.url, data)
   }
-
+//   storageSave(data: any){
+//     if(data.page) {
+//         Storage.setSessionPageInfo(data.page);
+//         this.appService.sessionPageInfoEmit(data.page);
+//     }
+//     if(data.page.meta) {
+//         Storage.setMenuList(data.page.meta);
+//         this.appService.metaDataEmit(data.page.meta);
+//     }
+//  }
  navigatePage(pageName:any){
    this.router.navigate(['/course/'+pageName])
  }

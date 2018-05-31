@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // API_END_POINT : 'https://api.digital-lync.com/api/'
+  API_END_POINT : '172.23.24.116:8001'
+  
+
 };
 
 /*
