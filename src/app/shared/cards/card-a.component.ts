@@ -15,7 +15,7 @@ import {Props} from './../../apex/common/props'
                 <div class="card-el"> 
                     <div class="img-box">
                         <div class="oval Aligner">
-                            <img [alt]="icard.imageAlt" [src]="imageHost+icard.image" height="100px" class="img-responsive card-image margin-auto"/>
+                            <img alt="icard.imageAlt" src="{{icard.image}}" height="100px" class="img-responsive card-image margin-auto"/>
                         </div>
                         <div class="carda wow slideInLeft Aligner">
                           <div class="Aligner-item">

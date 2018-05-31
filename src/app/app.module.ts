@@ -61,12 +61,10 @@ import { ModalpopupComponent } from './components/courses/modalpopup/modalpopup.
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
 import { BatchesComponent } from './components/batches/batches.component';
 import {CoursesService} from './components/courses/courses.service';
-import { ModalpopupComponent } from './components/modalpopup/modalpopup.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { FormmodalComponent } from './components/formmodal/formmodal.component';
 import { ThankyoupageComponent } from './components/thankyoupage/thankyoupage.component';
 import {ThankyouService} from './components/thankyoupage/thankyou.service';
-import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll/lib/simple-smooth-scroll.module.js';
 
 @NgModule({
   imports: [
@@ -75,7 +73,6 @@ import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll/lib/simple-sm
     AppRoutingModule,
     HttpClientModule,
     SharedModule.forRoot(),
-    SimpleSmoothScrollModule
   ],
   declarations: [
     AppComponent,

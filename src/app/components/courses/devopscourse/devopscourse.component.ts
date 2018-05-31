@@ -1,6 +1,5 @@
 import { Component, OnInit,Input,Inject,SimpleChange, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { Props } from '../../../apex/common/props';
-import { DOCUMENT } from "@angular/platform-browser";
 import {Meta, Title} from '@angular/platform-browser';
 import {routes} from "../../../app-routing.module";
 import {Router, ActivatedRoute} from "@angular/router";
@@ -87,52 +86,52 @@ courseData={
       { 
         name : "Linux", 
         description : "Linux is an open source operating system which is incredibly customizable.", 
-        image : "linux-digital-lync.svg", 
+        image : "assets/images/courses/devopscourse/linux-digital-lync.svg", 
         imageAlt : "Linux"
     },
     { 
       name : "Jenkins", 
       description : "Jenkins provides hundreds of plugins to support building, deploying and automating any project.", 
-      image : "jenkins-digital-lync.svg", 
+      image : "assets/images/courses/devopscourse/jenkins-digital-lync.svg", 
       imageAlt : "Jenkins"
     },
     { 
       name : "Git", 
       description : "Fast and Flexible distributed Version Control Tool. Allows to experiment new feature without interfering with working code.", 
-      image : "git-digital-lync.svg", 
+      image : "assets/images/courses/devopscourse/git-digital-lync.svg", 
       imageAlt : "Git"
   },
   { 
     name : "Lamp",  
     description : "Linux-Apache-MySQL-PHP technology is open source and highly secure, while running on a LINUX operating system.", 
-    image : "lamp-digital-lync.svg", 
+    image : "assets/images/courses/devopscourse/lamp-digital-lync.svg", 
     imageAlt : "Lamp"
 },{  
   name : "Chef", 
   description : "Strong choice for experienced DevOps Teams to automate development and deployment infrastructure.", 
-  image : "chef-digital-lync.svg", 
+  image : "assets/images/courses/devopscourse/chef-digital-lync.svg", 
   imageAlt : "Chef"
 },{ 
   name : "Docker", 
   description : "Docker is a computer program that performs operating-system-level virtualization also known as containerization.", 
-  image : "docker-digital-lync.svg", 
+  image : "assets/images/courses/devopscourse/docker-digital-lync.svg", 
   imageAlt : "Docker"
 },{ 
   name : "Maven", 
   description : "MAVEN has the ability to create project structure. Maven can generate documentation for the project.", 
-  image : "maven-digital-lync.svg", 
+  image : "assets/images/courses/devopscourse/maven-digital-lync.svg", 
   imageAlt : "Maven"
 },
 { 
   name : "Vagrant", 
   description : "Allows building and managing virtual machine environments. ", 
-  image : "vagrant-digital-lync.svg", 
+  image : "assets/images/courses/devopscourse/vagrant-digital-lync.svg", 
   imageAlt : "Vagrant"
 },
 { 
   name : "Nagios", 
   description : "Nagios is recognized as the top solution to monitor servers. It is fully capable of monitoring Windows servers, Linux servers.", 
-  image : "nagios-digital-lync.svg", 
+  image : "assets/images/courses/devopscourse/nagios-digital-lync.svg", 
   imageAlt : "Nagios"
 }
     
@@ -141,7 +140,7 @@ courseData={
       { 
         name : "Use Maven to develop web applications and put the application under version control system using Git.", 
         description : "Use GitHub and push the project to GitHub,for collaboration. Build a GCP instance and install jenkins CI-CD server and configure the jenkins using RBAC, configure security, manage required plugins. Configure jenkins and setup GitHub webhook for auto deploying the WebApp.", 
-        image : "project-digital-lync.png", 
+        image : "assets/images/courses/devopscourse/project-digital-lync.png", 
         imageAlt : "DevOps", 
     }
     ]
