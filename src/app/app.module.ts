@@ -58,13 +58,22 @@ import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
+import { BatchesComponent } from './components/batches/batches.component';
+import {CoursesService} from './components/courses/courses.service';
+import { ModalpopupComponent } from './components/modalpopup/modalpopup.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { FormmodalComponent } from './components/formmodal/formmodal.component';
+import { ThankyoupageComponent } from './components/thankyoupage/thankyoupage.component';
+import {ThankyouService} from './components/thankyoupage/thankyou.service';
+import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll/lib/simple-smooth-scroll.module.js';
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-lync' }),
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    SimpleSmoothScrollModule
   ],
   declarations: [
     AppComponent,
@@ -114,9 +123,14 @@ import { MainprogramComponent } from './components/programs/mainprogram/mainprog
     GethackathonprogramComponent,
     MaincourseComponent,
     MainprogramComponent,
+    BatchesComponent,
+    ModalpopupComponent,
+    ReviewsComponent,
+    FormmodalComponent,
+    ThankyoupageComponent,
 
   ],
-  providers: [FooterService,WINDOW_PROVIDERS],
+  providers: [FooterService,WINDOW_PROVIDERS,CoursesService,ThankyouService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

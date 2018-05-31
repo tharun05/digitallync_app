@@ -39,6 +39,7 @@ import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
 import {MainprogramComponent} from './components/programs/mainprogram/mainprogram.component';
+import {ThankyoupageComponent} from './components/thankyoupage/thankyoupage.component';
 export const routes: Routes = [
   { path: '', component: LandingComponent },
   {path:'courses',component:MaincourseComponent,children:[
@@ -47,6 +48,7 @@ export const routes: Routes = [
   {path:'programs',component:MainprogramComponent,children:[
     {path:'**',component:MainprogramComponent}
   ]},
+  { path: 'thankyou', component: ThankyoupageComponent},
   { path: 'course/devops-course-training-hyderabad', component: DevopscourseComponent},
   { path: 'course/azure-course-training-hyderabad', component: AzurecourseComponent },
   { path: 'course/python-course-training-hyderabad', component: PythoncourseComponent },
@@ -82,7 +84,6 @@ export const routes: Routes = [
   {path:'program/Gaming,AR-VR',component:GamingarvrprogramComponent},
   {path:'program/CRT',component:CrtprogramComponent},
   {path:'program/Hackathon',component:GethackathonprogramComponent}
-  
   
   // { path: 'fullstack', component: FullstackComponent },
   // { path: 'blockchain', component: BlockchainComponent },
