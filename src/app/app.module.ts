@@ -57,6 +57,7 @@ import { GamingarvrprogramComponent } from './components/programs/gamingarvrprog
 import { CrtprogramComponent } from './components/programs/crtprogram/crtprogram.component';
 import { GethackathonprogramComponent } from './components/programs/gethackathonprogram/gethackathonprogram.component';
 import { MaincourseComponent } from './components/courses/maincourse/maincourse.component';
+import { ModalpopupComponent } from './components/courses/modalpopup/modalpopup.component';
 import { MainprogramComponent } from './components/programs/mainprogram/mainprogram.component';
 import { BatchesComponent } from './components/batches/batches.component';
 import {CoursesService} from './components/courses/courses.service';
@@ -66,6 +67,7 @@ import { FormmodalComponent } from './components/formmodal/formmodal.component';
 import { ThankyoupageComponent } from './components/thankyoupage/thankyoupage.component';
 import {ThankyouService} from './components/thankyoupage/thankyou.service';
 import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll/lib/simple-smooth-scroll.module.js';
+
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-lync' }),

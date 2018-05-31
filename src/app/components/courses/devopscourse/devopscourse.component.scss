@@ -188,9 +188,12 @@ h2{
     background-image: linear-gradient(116deg, #6db7c1, #07cab2);
     padding:52px;
   }
+  .bannerImage:hover{
+    box-shadow: 12px 15px 20px 0 rgba(46,61,73,.37);
+  }
   @media only screen and (min-width: 320px) and (max-width: 500px) {
     .course_poster_banner{
-      
+
       padding:20px;
     }
     .slugName{
@@ -320,12 +323,6 @@ h2{
       height:200px;
       margin:auto   
        //margin-top: -10px;
-    }
-  }
-  .tools-covered{
-    h3{
-      color: #f5a623;
-      font-weight: bold;
     }
   }
   .download-curriculum{
@@ -519,4 +516,52 @@ h2{
   
   
   
-  
+  .card-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    
+    }
+    .card-el{
+    text-align: center;
+    height: 190px;
+    margin: 8px;
+    }
+    .img-box {
+    width: 100%;
+    height: auto;
+    overflow: unset;
+    background: transparent;
+    position: sticky;
+    }
+    .carda{
+    left:50px;
+    position: absolute;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(194, 194, 194, 0.5);
+    padding: 0px 10px 0px 60px;
+    text-align:left;
+    min-width:300px;
+    }
+    .oval {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(194, 194, 194, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 500px) {
+      .oval{
+        display:none;
+      }
+      .carda{
+        left:0px;
+        width:280px;
+      }
+
+    }

@@ -1,5 +1,6 @@
 import { Component, OnInit,Input,Inject,SimpleChange, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { Props } from '../../../apex/common/props';
+import { DOCUMENT } from "@angular/platform-browser";
 import {Meta, Title} from '@angular/platform-browser';
 import {routes} from "../../../app-routing.module";
 import {Router, ActivatedRoute} from "@angular/router";
@@ -10,6 +11,7 @@ import { DOCUMENT } from "@angular/platform-browser";
 import {CoursesService} from '../courses.service';
 import { Contact } from '../../../apex/entities/contact.entity';
 // import { WINDOW } from "../window.service";
+
 
 @Component({
   selector: 'app-devopscourse',
@@ -54,8 +56,6 @@ export class DevopscourseComponent implements OnInit {
   imageHost=Props.IMAGE_HOST;
   bannerData:any= [
     {
-      heading:'DevOps Too, So, Step into online platform for Bright Career!',
-      img:'../../../../assets/images/programs_banner.png'
   }
   ];
 courseData={ 
