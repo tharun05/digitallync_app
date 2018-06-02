@@ -1,18 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-pythoncourse',
-//   templateUrl: './pythoncourse.component.html',
-//   styleUrls: ['./pythoncourse.component.scss']
-// })
-// export class PythoncourseComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
 import { Component, OnInit,Input,Inject,SimpleChange, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { Props } from '../../../apex/common/props';
 import {Meta, Title} from '@angular/platform-browser';
@@ -64,7 +49,7 @@ export class PythoncourseComponent implements OnInit {
       'email': ['', [Validators.required, Validators.pattern(this.emailPattern)]],
       'mobile': ['', Validators.compose([Validators.required, Validators.minLength(5), Validators.pattern(this.mobilePattern)])]
     });
-    this.page.slug="Python-course-training-hyderabad";
+    this.page.slug="python-course-training-hyderabad";
   }
  
   imageHost=Props.IMAGE_HOST;

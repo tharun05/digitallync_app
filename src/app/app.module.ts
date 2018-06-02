@@ -25,7 +25,6 @@ import {FooterService} from './components/footer/footer.service';
 import { DevopscourseComponent } from './components/courses/devopscourse/devopscourse.component';
 import { AzurecourseComponent } from './components/courses/azurecourse/azurecourse.component';
 import { PythoncourseComponent } from './components/courses/pythoncourse/pythoncourse.component';
-import { DeeplearningcourseComponent } from './components/courses/deeplearningcourse/deeplearningcourse.component';
 import { BigdatacourseComponent } from './components/courses/bigdatacourse/bigdatacourse.component';
 import { DataanalysiscourseComponent } from './components/courses/dataanalysiscourse/dataanalysiscourse.component';
 import { DigitalmarketingcourseComponent } from './components/courses/digitalmarketingcourse/digitalmarketingcourse.component';
@@ -89,7 +88,6 @@ import {ThankyouService} from './components/thankyoupage/thankyou.service';
     DevopscourseComponent,
     AzurecourseComponent,
     PythoncourseComponent,
-    DeeplearningcourseComponent,
     BigdatacourseComponent,
     DataanalysiscourseComponent,
     DigitalmarketingcourseComponent,

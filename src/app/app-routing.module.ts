@@ -5,7 +5,6 @@ import {LandingComponent} from './components/landing/landing.component';
 import {DevopscourseComponent} from "./components/courses/devopscourse/devopscourse.component";
 import {AzurecourseComponent} from "./components/courses/azurecourse/azurecourse.component";
 import {PythoncourseComponent} from "./components/courses/pythoncourse/pythoncourse.component";
-import {DeeplearningcourseComponent} from "./components/courses/deeplearningcourse/deeplearningcourse.component";
 import {BigdatacourseComponent} from "./components/courses/bigdatacourse/bigdatacourse.component";
 import {DataanalysiscourseComponent} from "./components/courses/dataanalysiscourse/dataanalysiscourse.component";
 import {DigitalmarketingcourseComponent} from "./components/courses/digitalmarketingcourse/digitalmarketingcourse.component";
@@ -52,7 +51,6 @@ export const routes: Routes = [
   { path: 'course/devops-course-training-hyderabad', component: DevopscourseComponent},
   { path: 'course/azure-course-training-hyderabad', component: AzurecourseComponent },
   { path: 'course/python-course-training-hyderabad', component: PythoncourseComponent },
-  { path: 'course/deep-learning-course-training-hyderabad', component: DeeplearningcourseComponent },
   { path: 'course/big-data-course-training-hyderabad', component: BigdatacourseComponent },
   { path: 'course/data-analysis-course-training-hyderabad', component: DataanalysiscourseComponent },
   { path: 'course/digital-marketing-course-training-hyderabad', component: DigitalmarketingcourseComponent },
